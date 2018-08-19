@@ -1,0 +1,8 @@
+lane :beta do
+	rule :swift4_support, :warning
+	sh "echo OK"
+end
+
+def_rule :swift4_support do
+	sh "exit 1"
+end

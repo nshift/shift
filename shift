@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+
+require_relative "shift"
+
+core = Shift::ShiftCore.new
+folder = Shift::ShiftFolder.new(ARGV[0])
+Dir.chdir(File.dirname(folder.path) || Dir.pwd) do
+	core.execute_lanes(folder)
+end

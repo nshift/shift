@@ -1,0 +1,8 @@
+lane :beta do
+	rule :swift4_support, :error, before("3018-12-01")
+	sh 'echo "beta success"'
+end
+
+def_rule :swift4_support do
+	sh "exit 1"
+end

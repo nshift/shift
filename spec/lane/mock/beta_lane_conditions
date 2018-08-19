@@ -1,0 +1,23 @@
+before_all do
+	__test "before_all"
+end
+
+before_each do |lane|
+	__test ":#{lane} before_each"
+end
+
+lane :beta do
+	__test ":beta lane"
+end
+
+lane :staging do
+	__test ":staging lane"
+end
+
+after_each do |lane|
+	__test ":#{lane} after_each"
+end
+
+after_all do
+	__test "after_all"
+end
