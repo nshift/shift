@@ -1,0 +1,19 @@
+lane :beta1 do
+	rule :swift3_support, :warning
+	rule :swift4_support, :warning
+	sh 'echo "beta1 success"'
+end
+
+lane :beta2 do
+	rule :swift3_support, :error
+	rule :swift4_support, :error
+	sh 'echo "beta2 success"'
+end
+
+def_rule :swift4_support do
+	sh "exit 0"
+end
+
+def_rule :swift3_support do
+	sh "exit 0"
+end

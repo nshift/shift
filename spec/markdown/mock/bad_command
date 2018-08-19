@@ -1,0 +1,8 @@
+lane :beta do
+	rule :markdown, :error
+	sh "echo OK"
+end
+
+def_rule :markdown do
+	markdown :error, "./spec/markdown/mock/valid_links.md"
+end

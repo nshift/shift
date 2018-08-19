@@ -1,0 +1,13 @@
+lane :beta do
+	rule :swift4_support, :error
+	sh 'echo "beta success"'
+end
+
+def_rule :swift4_support do
+	sh "exit 0"
+	command_failure
+end
+
+def command_failure
+	return false
+end

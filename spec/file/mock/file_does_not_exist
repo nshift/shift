@@ -1,0 +1,4 @@
+lane :beta do
+	raise FileDoesNotExist if ! File.exists?("README.md2")
+	sh "ls"
+end
