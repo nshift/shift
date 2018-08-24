@@ -2,7 +2,7 @@
 >
 > We strongly advice you to use the following templates:
 >
-> * [New app](/nshift/shift/blob/master/issues/new?template=new-apps.md): Suggest a new app that improve our productivity
+> * [New Automation](/nshift/shift/blob/master/issues/new?template=new-automation.md): Suggest a new automation that you consider useful to have
 > * [Enhancement](/nshift/shift/blob/master/issues/new?template=enhancement.md): Suggest an enhancement on existing command lines
 > * [Bug Report](/nshift/shift/blob/master/issues/new?template=bug-report.md): Create a report to help us improve
 > * [Project Design](/nshift/shift/blob/master/issues/new?template=project-design.md): Suggest a better approach on project design
