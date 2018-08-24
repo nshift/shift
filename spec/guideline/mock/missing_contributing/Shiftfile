@@ -1,0 +1,4 @@
+lane :beta do
+	guideline :validate, :github_community
+	sh "ls"
+end

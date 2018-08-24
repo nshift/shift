@@ -3,10 +3,13 @@ require 'net/http'
 
 module Shift
 
-  class MarkdownUnknownCommand < StandardError
+  class MarkdownError < StandardError
   end
 
-  class MarkdownContainsNotFoundLink < StandardError
+  class MarkdownUnknownCommand < MarkdownError
+  end
+
+  class MarkdownContainsNotFoundLink < MarkdownError
   end
 
   module BuiltIn
