@@ -1,0 +1,10 @@
+before_all do
+	sh "rm -rf /tmp/missing_develop"
+	sh "mkdir /tmp/missing_develop; cd /tmp/missing_develop; git init; touch empty; git add .; git commit -m 'Initial commit'; git checkout -b remotes/origin/master"
+end
+
+lane :beta do
+	Dir.chdir("/tmp/missing_develop") do
+		git_flow :validate
+	end
+end

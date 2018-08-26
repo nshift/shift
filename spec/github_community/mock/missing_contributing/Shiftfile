@@ -1,0 +1,3 @@
+lane :beta do
+	github_community :validate
+end
