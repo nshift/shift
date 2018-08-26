@@ -1,5 +1,0 @@
-lane :beta do
-	git_flow :validate
-	github_community :validate
-	sh "ls"
-end
