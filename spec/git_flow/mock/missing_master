@@ -1,0 +1,10 @@
+before_all do
+	sh "rm -rf /tmp/missing_master"
+	sh "mkdir /tmp/missing_master; cd /tmp/missing_master; git init"
+end
+
+lane :beta do
+	Dir.chdir("/tmp/missing_master") do
+		git_flow :validate
+	end
+end

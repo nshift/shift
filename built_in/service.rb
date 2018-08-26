@@ -24,7 +24,7 @@ module Shift
     end
 
     def self.built_in_class_ref(built_in_name)
-      class_name = "BuiltIn::" + built_in_name.capitalize
+      class_name = "BuiltIn::" + built_in_name.shift_class
       begin
         return Shift.const_get(class_name)
       rescue NameError

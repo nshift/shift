@@ -20,7 +20,7 @@ module Shift
           exit_status = thread.value.exitstatus
         end
         raise BuiltInFailed.new(result) if exit_status != 0
-        return true
+        return result
       end
     end
   end
